@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdio.h
 int main()
 {
     char c;
@@ -10,5 +11,6 @@ int main()
     else
         printf("%c is not an alphabet.",c);
 
+    getch();
     return 0;
 }
