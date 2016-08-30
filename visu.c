@@ -3,8 +3,8 @@ void main()
 {
     int i=0,len=2,sum=0,flag=0,j=0,temp1=0,temp2=0,k=0;
     char s[100];
-    int rom[]={1,5,10,50,100,500,1000};
-    char ro[]={'I','V','X','L','C','D','M'};
+    int a[]={1,5,10,50,100,500,1000};
+    char b[]={'I','V','X','L','C','D','M'};
     scanf("%s",&s);
     len=strlen(s);
     switch(s[len-1])
@@ -35,13 +35,13 @@ void main()
     {
         for(j=0;j<7;j++)
         {
-            if(ro[j] == s[i])
+            if(b[j] == s[i])
             {
-                temp1=rom[j];
+                temp1=a[j];
                 temp2=i+1;
                 for(k=0;k<7;k++)
                 {
-                    if(ro[k] == s[temp2])
+                    if(b[k] == s[temp2])
                     {
                         if((temp1 > rom[k]) || (temp1 == rom[k]) )
                         {
@@ -49,7 +49,7 @@ void main()
                         }
                         else
                         {
-                            sum=sum-rom[j];
+                            sum=sum-a[j];
                         }
                     }
                 }
