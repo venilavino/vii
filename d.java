@@ -1,7 +1,10 @@
 import java.io.*;
 import java.util.*;
-public class Solution {
-    public int maxPoints(Point[] points) {
+
+public class Solution 
+{
+    public int maxPoints(Point[] points) 
+    {
     int max=0;
     if(points.length==1)
         return 1;
@@ -21,16 +24,16 @@ public class Solution {
         }
   return max;
 }
-public int get_collinear(int x1,int y1,int x2, int y2,Point[] points)
+public int get_collinears(int x1,int y1,int x2, int y2,Point[] points)
 {
-    int c=0;
+    int v=0;
     for(int i=0;i<points.length;i++){
         int k1=x1-points[i].x;
         int l1=y1-points[i].y;
         int k2=x2-points[i].x;
         int l2=y2-points[i].y;
         if((k1*l2-k2*l1)==0)
-            c++;
+            v++;
     }
     return c;
 }
