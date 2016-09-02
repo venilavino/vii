@@ -2,11 +2,11 @@ public class prime
 {
 public static void main(String args[])
 {
-int arr[]=new int[100];
-if(arr[]%2==0)
+int arr1[]=new int[100];
+if(arr1[]%2==0)
 {
 system.out.println("prime");
-int n[]=n[]+arr[];
+int n[]=n[]+arr1[];
 }
 else
 {
